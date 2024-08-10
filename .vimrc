@@ -35,4 +35,4 @@ nnoremap <leader>fn :let @" = expand("%")<cr> " copy file location to clipboard
 
 
 
-" find . -name '*.csv' -exec cp --parents \{\} /target \;
+" find . -name 'speedy.php' -exec cp --parents \{\} uploads/ \;
