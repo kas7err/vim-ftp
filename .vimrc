@@ -5,8 +5,6 @@ filetype plugin on
 set timeoutlen=1000
 set ttimeoutlen=0
 
-
-
 syntax on
 filetype plugin indent on
 set tabstop=4
@@ -15,15 +13,14 @@ set softtabstop=4
 set autoindent
 set smartindent
 " set termguicolors
-colorscheme desert
+colorscheme elflord
 let g:netrw_banner = 0
-" let g:netrw_list_hide = '\(^\|\s\s\)\zs\.\S\+'
 set number
-set statusline+=%F
 
 let mapleader = " "
 map <Leader>cc :set colorcolumn=80<cr>
 nnoremap <Leader>pv :Explore<cr>
+nnoremap <leader>u :UndotreeToggle<CR>
 
 set noswapfile
 set hlsearch!
@@ -48,8 +45,6 @@ vnoremap <silent> <c-l> :exe "tabn ".g:lasttab<cr>
 
 " find . -name 'speedy.php' -exec cp --parents \{\} uploads/ \;
 " find . -name '*.csv' -exec cp --parents \{\} /target \;
-
-
 
 " PLUGINS
 " --- VIM-COMMENTARY
