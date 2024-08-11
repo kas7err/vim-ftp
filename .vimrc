@@ -17,6 +17,7 @@ set number
 set noswapfile
 set hlsearch!
 set incsearch
+set laststatus=2 " statusbar
 let mapleader = " "
 " nnoremap <leader>pt :vsplit | term<CR> " Split window vertically open terminal
 nnoremap <Leader>pv :Explore<cr>
