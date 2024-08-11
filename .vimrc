@@ -11,16 +11,16 @@ set shiftwidth=4
 set softtabstop=4
 set autoindent
 set smartindent
-colorscheme elflord
+colorscheme industry
 let g:netrw_banner = 0
 set number
-set statusline+=%F
 set noswapfile
 set hlsearch!
 set incsearch
 let mapleader = " "
 " nnoremap <leader>pt :vsplit | term<CR> " Split window vertically open terminal
 nnoremap <Leader>pv :Explore<cr>
+nnoremap <Leader>f :find
 nnoremap <leader><space> :let @/=''<cr> " clear search
 nnoremap <C-P> :cprev<cr>
 nnoremap <C-N> :cnext<cr>
