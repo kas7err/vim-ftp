@@ -14,7 +14,7 @@ set shiftwidth=4
 set softtabstop=4
 set autoindent
 set smartindent
-set termguicolors
+" set termguicolors
 colorscheme desert
 let g:netrw_banner = 0
 " let g:netrw_list_hide = '\(^\|\s\s\)\zs\.\S\+'
