@@ -1,34 +1,29 @@
 set nocompatible
+syntax on
 set path +=**
 set wildmenu
 filetype plugin on
 set timeoutlen=1000
 set ttimeoutlen=0
-
-syntax on
 filetype plugin indent on
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 set autoindent
 set smartindent
-" set termguicolors
 colorscheme elflord
 let g:netrw_banner = 0
 set number
-
-let mapleader = " "
-map <Leader>cc :set colorcolumn=80<cr>
-nnoremap <Leader>pv :Explore<cr>
-nnoremap <leader>u :UndotreeToggle<CR>
-
+set statusline+=%F
 set noswapfile
 set hlsearch!
 set incsearch
-nnoremap <leader><space> :let @/=''<cr> " clear search
-
+let mapleader = " "
 " nnoremap <leader>pt :vsplit | term<CR> " Split window vertically open terminal
-nnoremap <leader>fn :let @" = expand("%")<cr> " copy file location to clipboard
+nnoremap <Leader>pv :Explore<cr>
+nnoremap <leader><space> :let @/=''<cr> " clear search
+nnoremap <C-P> :cprev<cr>
+nnoremap <C-N> :cnext<cr>
 
 " tab navigation: Alt or Ctrl+Shift may not work in terminal:
 " http://vim.wikia.com/wiki/Alternative_tab_navigation
