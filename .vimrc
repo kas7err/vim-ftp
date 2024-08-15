@@ -11,7 +11,7 @@ set shiftwidth=4
 set softtabstop=4
 set autoindent
 set smartindent
-colorscheme industry
+colorscheme pablo
 let g:netrw_banner = 0
 set number
 set noswapfile
@@ -22,6 +22,7 @@ let mapleader = " "
 " nnoremap <leader>pt :vsplit | term<CR> " Split window vertically open terminal
 nnoremap <Leader>pv :Explore<cr>
 nnoremap <Leader>f :find
+nnoremap <Leader>u :UndotreeToggle<cr>
 nnoremap <leader><space> :let @/=''<cr> " clear search
 nnoremap <C-P> :cprev<cr>
 nnoremap <C-N> :cnext<cr>
@@ -55,3 +56,7 @@ vnoremap <silent> <c-l> :exe "tabn ".g:lasttab<cr>
 " git clone https://github.com/mbbill/undotree.git
 " vim -u NONE -c "helptags undotree/doc" -c q
 
+" mkdir -p ~/.vim/pack/tpope/start
+" cd ~/.vim/pack/tpope/start
+" git clone https://tpope.io/vim/surround.git
+" vim -u NONE -c "helptags surround/doc" -c q
